@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentBottom="true"
+    tools:context=".MainActivity">
+
+    <View
+        android:id="@+id/viewBackGround"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#4CAF50"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <View
+        android:id="@+id/viewFooter"
+        android:layout_width="wrap_content"
+        android:layout_height="72dp"
+        android:background="#419645"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <View
+        android:id="@+id/viewCheese"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:background="@drawable/cheese"
+        app:layout_constraintBottom_toBottomOf="@+id/viewFooter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="@+id/viewFooter"
+        app:layout_constraintTop_toTopOf="@+id/viewFooter"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonMouse"
+        android:layout_width="80dp"
+        android:layout_height="100dp"
+        android:background="@drawable/mouse"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonMouse2"
+        android:layout_width="80dp"
+        android:layout_height="100dp"
+        android:background="@drawable/mouse"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="73dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonMouse3"
+        android:layout_width="80dp"
+        android:layout_height="100dp"
+        android:background="@drawable/mouse"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="145dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonMouse4"
+        android:layout_width="80dp"
+        android:layout_height="100dp"
+        android:background="@drawable/mouse"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="217dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonMouse5"
+        android:layout_width="80dp"
+        android:layout_height="100dp"
+        android:background="@drawable/mouse"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="289dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonMouse6"
+        android:layout_width="80dp"
+        android:layout_height="100dp"
+        android:background="@drawable/mouse"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="80dp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonMouse7"
+        android:layout_width="80dp"
+        android:layout_height="100dp"
+        android:background="@drawable/mouse"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="73dp"
+        tools:layout_editor_absoluteY="80dp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonMouse8"
+        android:layout_width="80dp"
+        android:layout_height="100dp"
+        android:background="@drawable/mouse"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="145dp"
+        tools:layout_editor_absoluteY="80dp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonMouse9"
+        android:layout_width="80dp"
+        android:layout_height="100dp"
+        android:background="@drawable/mouse"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="217dp"
+        tools:layout_editor_absoluteY="80dp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonMouse10"
+        android:layout_width="80dp"
+        android:layout_height="100dp"
+        android:background="@drawable/mouse"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="289dp"
+        tools:layout_editor_absoluteY="80dp" />
+
+    <TextView
+        android:id="@+id/textViewScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/baloo"
+        android:text="0"
+        android:textAlignment="viewEnd"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewScoreText"
+        app:layout_constraintStart_toEndOf="@+id/textViewScoreText"
+        app:layout_constraintTop_toTopOf="@+id/textViewScoreText"
+        app:layout_constraintVertical_bias="0.333" />
+
+    <TextView
+        android:id="@+id/textViewTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/baloo"
+        android:text="0"
+        android:textAlignment="viewEnd"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewTimeText"
+        app:layout_constraintStart_toEndOf="@+id/textViewTimeText"
+        app:layout_constraintTop_toTopOf="@+id/textViewTimeText"
+        app:layout_constraintVertical_bias="0.976" />
+
+    <TextView
+        android:id="@+id/textViewTimeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:fontFamily="@font/baloo"
+        android:text="Time   "
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/viewFooter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/viewFooter"
+        app:layout_constraintTop_toTopOf="@+id/viewFooter"
+        app:layout_constraintVertical_bias="0.526" />
+
+    <TextView
+        android:id="@+id/textViewScoreText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/baloo"
+        android:text="Score   "
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/viewFooter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.85"
+        app:layout_constraintStart_toStartOf="@+id/viewFooter"
+        app:layout_constraintTop_toTopOf="@+id/viewFooter"
+        app:layout_constraintVertical_bias="0.526" />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/viewGroupMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:constraint_referenced_ids="viewMenuBackGround,textViewTittle,textViewHighScoreText,textViewHighScore,buttonPlay" />
+
+    <View
+        android:id="@+id/viewMenuBackGround"
+        android:layout_width="350dp"
+        android:layout_height="200dp"
+        android:background="@drawable/rounded_corners"
+        app:layout_constraintBottom_toBottomOf="@+id/viewBackGround"
+        app:layout_constraintEnd_toEndOf="@+id/viewBackGround"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.400" />
+
+    <TextView
+        android:id="@+id/textViewHighScoreText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/baloo"
+        android:text="High Score  "
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/viewMenuBackGround"
+        app:layout_constraintEnd_toEndOf="@+id/viewMenuBackGround"
+        app:layout_constraintHorizontal_bias="0.46"
+        app:layout_constraintStart_toStartOf="@+id/viewMenuBackGround"
+        app:layout_constraintTop_toTopOf="@+id/viewMenuBackGround"
+        app:layout_constraintVertical_bias="0.369" />
+
+    <TextView
+        android:id="@+id/textViewHighScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/baloo"
+        android:text="0"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewHighScoreText"
+        app:layout_constraintStart_toEndOf="@+id/textViewHighScoreText"
+        app:layout_constraintTop_toTopOf="@+id/textViewHighScoreText" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonPlay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PLAY"
+        app:layout_constraintBottom_toBottomOf="@+id/viewMenuBackGround"
+        app:layout_constraintEnd_toEndOf="@+id/viewMenuBackGround"
+        app:layout_constraintStart_toStartOf="@+id/viewMenuBackGround"
+        app:layout_constraintTop_toTopOf="@+id/viewMenuBackGround"
+        app:layout_constraintVertical_bias="0.921" />
+
+    <TextView
+        android:id="@+id/textViewTittle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/baloo"
+        android:text="CHEESY DEFENDER"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="@+id/viewMenuBackGround"
+        app:layout_constraintEnd_toEndOf="@+id/viewMenuBackGround"
+        app:layout_constraintStart_toStartOf="@+id/viewMenuBackGround"
+        app:layout_constraintTop_toTopOf="@+id/viewMenuBackGround"
+        app:layout_constraintVertical_bias="0.098" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
